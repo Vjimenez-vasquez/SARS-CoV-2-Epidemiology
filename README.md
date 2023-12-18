@@ -1,8 +1,9 @@
 # SARS-CoV-2-Epidemiology
 A collection of codes for SARS-CoV-2 weekly surveillance
 
-# PASO 1 : OBSERVAR CORRIDAS en R
+# Step 1 : OBSERVAR CORRIDAS en R
 ```r
+# PASO 1 : LEER LA DATA
 R
 data <- read.csv("metadata_shiny.csv", header=TRUE)
 sort(unique(data$gisaid))
@@ -11,7 +12,7 @@ as.data.frame(table(data$VOC.VOI))
 as.data.frame(table(data$gisaid))
 quit("no")
 
-### PASO 2 : ACTUALIZAR CORRIDA en el servidor http://10.120.12.96 ###
+# PASO 2 : ACTUALIZAR CORRIDA en el servidor http://10.120.12.96
 
 ./metadaShiny_sql -n 1115 -o 1115_shiny ; 
 ./update_shiny 1115 metadata_shiny.csv ;
