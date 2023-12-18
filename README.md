@@ -1,5 +1,6 @@
 # SARS-CoV-2-Epidemiology
 A collection of codes for SARS-CoV-2 weekly surveillance
+![Captura de pantalla de 2023-12-18 15-13-41](https://github.com/Vjimenez-vasquez/SARS-CoV-2-Epidemiology/assets/89874227/362ab767-cda9-4679-88a0-522780b1b8e6)
 
 # Step 1 : OBSERVAR CORRIDAS en R
 ```r
